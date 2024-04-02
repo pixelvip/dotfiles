@@ -45,6 +45,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # Set editor
 export EDITOR=nvim
+export VISUAL=nvim
 
 # pan do path
 export PATH="$HOME/denteo/dental/script:$PATH"
