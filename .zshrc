@@ -51,7 +51,7 @@ export VISUAL=nvim
 export PATH="$HOME/denteo/dental/script:$PATH"
 
 # RTX version manager
-eval "$(rtx activate zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
 
 # scripts path
 export PATH="$HOME/scripts:$PATH"
