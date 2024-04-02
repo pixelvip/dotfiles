@@ -56,3 +56,13 @@ eval "$(~/.local/bin/mise activate zsh)"
 # scripts path
 export PATH="$HOME/scripts:$PATH"
 
+# yazi shell wrapper
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
