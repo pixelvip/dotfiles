@@ -46,9 +46,6 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 # Set editor
 export EDITOR=nvim
 
-# Add Bundle to Path
-PATH="$(ruby -e 'print Gem.default_dir')/bin:$PATH"
-
 # pan do path
 export PATH="$HOME/denteo/dental/script:$PATH"
 
