@@ -66,3 +66,6 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+# minizinc
+export PATH="/usr/local/MiniZincIDE-2.8.3-bundle-linux-x86_64/bin:$PATH"
+
