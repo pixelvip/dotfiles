@@ -3,3 +3,6 @@ os:
 
 gui:
   nerdFontsVersion: "3"
+
+git:
+  skipHookPrefix: "WIP [skip ci] "
