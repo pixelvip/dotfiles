@@ -56,6 +56,11 @@ eval "$(~/.local/bin/mise activate zsh)"
 # scripts path
 export PATH="$HOME/scripts:$PATH"
 
+# atuin path
+export PATH="$HOME/.atuin/bin:$PATH"
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
+
 # yazi shell wrapper
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
